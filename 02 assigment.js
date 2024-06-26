@@ -103,6 +103,8 @@ const john = {
 mark.calcBMI();
 john.calcBMI();
 
+// Election
+
 if (mark.bmi > john.bmi) {
   console.log(
     `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})!`
@@ -115,3 +117,43 @@ if (mark.bmi > john.bmi) {
 
 console.log(mark.calcBMI());
 console.log(john.calcBMI());
+
+for (let voter = 1; voter <= 50; voter++) {
+  console.log(`Voter number ${voter} is currently voting`);
+}
+
+const populations2 = [10, 1441, 322, 84];
+const percentages2 = [];
+
+for (let i = 0; i < populations2.length; i++) {
+  const perc = percentageOfWorld1(populations2[i]);
+  percentages2.push(perc);
+}
+
+console.log(populations2);
+console.log(percentages2);
+
+// Or
+
+const percentages3 = [];
+
+let i = 0;
+while (i < populations.length) {
+  const perc = percentageOfWorld1(populations[i]);
+  percentages3.push(perc);
+  i++;
+}
+
+console.log(percentages3);
+
+//
+
+const listOfNeighbours = [
+  ["Canada", "Mexico"],
+  ["Spain"],
+  ["Norway", "Sweden", "Russia"],
+];
+
+for (let i = 0; i < listOfNeighbours.length; i++)
+  for (let y = 0; y < listOfNeighbours[i].length; y++)
+    console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
